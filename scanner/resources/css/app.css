@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply flex flex-col items-center pt-14 pb-14 bg-custom-blue justify-center min-h-screen font-poppins;
+}
