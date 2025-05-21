@@ -20,4 +20,12 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    build: {
+        manifest: true,
+        outDir: "public/build",
+        rollupOptions: {
+            input: ["resources/css/app.css", "resources/js/app.js"],
+        },
+    },
+    base: process.env.ASSET_URL ? process.env.ASSET_URL + "/build/" : "/build/",
 });
